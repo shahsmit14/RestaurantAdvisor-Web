@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="userValidator" class="com.restaurantadvisor.website.validator.UserVaidator"></bean>
+	<bean id="loginDetailsDAO" class="com.restaurantadvisor.website.dao.LoginDetailsDAO"></bean>
+	<bean id="neuUserRegisterationDAO" class="com.restaurantadvisor.website.dao.UserRegisterationDAO"></bean>
+	<bean id="newHotelRegisterationDAO" class="com.restaurantadvisor.website.dao.HotelRegisterationDAO"></bean>
+	<bean id="adminWorkingDAO" class="com.restaurantadvisor.website.dao.AdminFunctionalityDAO"></bean>
+	<bean id="hotelWorkingDAO" class="com.restaurantadvisor.website.dao.HotelFunctilnalityDAO"></bean>
+	<bean id="customerWorkingDAO" class="com.restaurantadvisor.website.dao.CustomerFunctionalityDAO"></bean>
+	<bean id="hotelSearchInterceptor" class="com.restaurantadvisor.website.interceptor.HotelSearchInterceptor"></bean>
+</beans>
